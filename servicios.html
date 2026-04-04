@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiadores de Bogotá S.A.S.</title>
+  <link rel="stylesheet" href="servicios.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<header>
+
+<div class="top-bar">
+    <div class="container top-content">
+        <div class="top-left">
+            <span><i class="fas fa-map-marker-alt"></i> Calle 17 # 09-21 Oficina 503 Bogotá</span>
+            <span><i class="fas fa-envelope"></i> info@fiadores.com</span>
+            <span><i class="fas fa-phone"></i> +57 320 8855930</span>
+        </div>
+    </div>
+</div>
+
+<div class="navbar">
+    <div class="container nav-content">
+
+        <div class="logo">
+            <img src="IMAGENES/LOGO.png" alt="logo">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <a href="https://wa.me/573208855930" target="_blank" class="btn">
+  SOLICITA FIADOR
+</a>
+
+    </div>
+</div>
+
+</header>
+    <section class="services-section">
+
+    <div class="services-header">
+        <h1>Nuestros Servicios</h1>
+        <p>Soluciones jurídicas y financieras confiables para garantizar tus procesos.</p>
+    </div>
+
+    <div class="services-container">
+
+        <!-- SERVICIO 1 -->
+        <div class="service-card">
+            <h2>1. Servicio de Fiador para Alquiler Directo o con Abogados</h2>
+
+            <h4>Fiador con:</h4>
+            <ul>
+                <li>✔ Finca raíz</li>
+                <li>✔ Solvencia económica</li>
+            </ul>
+
+            <h4>Documentos entregados:</h4>
+            <ul>
+                <li>Cédula de ciudadanía</li>
+                <li>Carta laboral</li>
+                <li>Últimos 3 extractos bancarios</li>
+                <li>Certificado de tradición y libertad (no mayor a 30 días)</li>
+            </ul>
+            <P>Sin garantia en datacredito o centrales de riesgo</P>
+        </div>
+
+        <!-- SERVICIO 2 -->
+        <div class="service-card">
+            <h2>2. Fiador para Aseguradora o Inmobiliaria</h2>
+
+            <h4>Fiador con:</h4>
+            <ul>
+                <li>✔ Finca raíz</li>
+                <li>✔ Solvencia económica</li>
+                <li>✔ Garantía sin reporte en Datacrédito o centrales de riesgo</li>
+            </ul>
+
+            <h4>Documentos entregados:</h4>
+            <ul>
+                <li>Cédula de ciudadanía</li>
+                <li>Carta laboral</li>
+                <li>Últimos 3 extractos bancarios</li>
+                <li>Certificado de tradición y libertad (no mayor a 30 días)</li>
+            </ul>
+        </div>
+
+        <!-- SERVICIO 3 -->
+        <div class="service-card">
+            <h2>3. Servicio de Fiador para Solicitudes de Crédito</h2>
+
+            <h4>Fiador con:</h4>
+            <ul>
+                <li>✔ Solvencia económica</li>
+                <li>✔ Garantía sin reporte en centrales de riesgo</li>
+            </ul>
+
+            <h4>Documentos entregados:</h4>
+            <ul>
+                <li>Cédula de ciudadanía</li>
+                <li>Carta laboral</li>
+                <li>Últimos 3 extractos bancarios</li>
+            </ul>
+        </div>
+
+        <!-- SERVICIO 4 -->
+        <div class="service-card">
+            <h2>4. Servicio de Paquete Laboral</h2>
+            <ul>
+                <li>✔ Elaboración de carta laboral</li>
+                <li>✔ Certificación de ingresos</li>
+                <li>✔ Soportes laborales requeridos</li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+<!-- ___________________________CALCULADORA____________________________________ -->
+<section class="cotizador">
+
+  <div class="container">
+
+    <h2>Cotiza tu servicio</h2>
+    <p class="subtitle">Calcula el valor de tu fiador en segundos</p>
+
+    <div class="cotizador-box">
+
+      <!-- INPUT -->
+      <div class="input-group">
+        <label>Canon de arrendamiento</label>
+        <input type="text" id="canon" placeholder="Ej: 2.500.000">
+      </div>
+
+      <!-- TIPO SERVICIO -->
+      <div class="input-group">
+        <label>Tipo de servicio</label>
+        <select id="tipo">
+          <option value="directo">Arriendo Directo / Abogado</option>
+          <option value="aseguradora">Aseguradora / Inmobiliaria</option>
+        </select>
+      </div>
+
+      <!-- BOTÓN -->
+      <button onclick="calcular()">Cotizar servicio</button>
+
+      <!-- RESULTADO -->
+      <div class="resultado" id="resultado">
+        $0
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ________________________FOOTER______________________________________ -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- LOGO Y DESCRIPCIÓN -->
+    <div class="footer-col">
+      <h3>FIADORES & CODEUDORES</h3>
+      <p>Soluciones confiables para arrendamientos en Bogotá. Rapidez, seguridad y respaldo legal en cada proceso.</p>
+    </div>
+
+    <!-- ENLACES -->
+    <div class="footer-col">
+      <h4>Enlaces</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- SERVICIOS -->
+    <div class="footer-col">
+      <h4>Servicios</h4>
+      <ul>
+        <li>Arriendo Directo</li>
+        <li>Con Aseguradora</li>
+        <li>Procesos Jurídicos</li>
+        <li>Peritos y Minutas</li>
+      </ul>
+    </div>
+
+    <!-- CONTACTO -->
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <p>📍 Calle 17 # 09-21 Oficina 503</p>
+      <p>📞 +57 320 8855930</p>
+      <p>✉️ info@fiadores.com</p>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Fiadores & Codeudores S.A.S - Todos los derechos reservados</p>
+  </div>
+</footer>
+<!-- BOTÓN FLOTANTE WHATSAPP -->
+<a href="https://wa.me/573208855930?text=Hola%20quiero%20información%20sobre%20un%20fiador"
+   class="whatsapp-float"
+   target="_blank">
+
+   <img src="IMAGENES/WSPFONDONADA.PNG" alt="WhatsApp">
+</a>
+<script src="servicios.js"></script>
+</body>
